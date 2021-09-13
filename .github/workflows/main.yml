@@ -10,7 +10,7 @@ jobs:
       - name: install dependencies
         run: 'npm install'
       - name: deploy using wrangler
-        run: 'npx wrangler publish'
+        run: 'npx @cloudflare/wrangler publish'
         env:
           CF_ACCOUNT_ID: ${{secrets.CF_ACCOUNT_ID}}
           CF_ZONE_ID: ${{secrets.CF_ZONE_ID}}
