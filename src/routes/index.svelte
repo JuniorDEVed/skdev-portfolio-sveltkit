@@ -13,10 +13,6 @@
 	};
 </script>
 
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
-
 <section>
 	<h1>
 		<button on:click={toggle}>Switch</button>

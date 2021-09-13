@@ -3,9 +3,12 @@
 	import '../app.css';
 </script>
 
+<svelte:head>
+	<title>SK | Development</title>
+</svelte:head>
+
 <section>
 	<Header />
-
 	<main>
 		<slot />
 	</main>
