@@ -9,6 +9,8 @@ jobs:
       - uses: actions/checkout@v2.0.0
       - name: install dependencies
         run: 'npm install'
+      - name: build project
+        run: 'npm run build'
       - name: deploy using wrangler
         run: 'npx @cloudflare/wrangler publish'
         env:
