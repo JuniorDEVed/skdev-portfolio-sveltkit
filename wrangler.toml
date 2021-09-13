@@ -1,0 +1,9 @@
+name = "seanknowles-dot-dev"
+type = "webpack"
+route = 'seanknowles.dev/*'
+zone_id = '3546aab9ee138a9d03328661ed711bb9'
+account_id = '1db7d4cfebbb0cfd2b4a742bf9106796'
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+site = {bucket = "./build", entry-point = "./workers-site"}
