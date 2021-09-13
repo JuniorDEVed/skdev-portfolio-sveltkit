@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy Cloudflare Worker
     steps:
-      - uses: actions/checkout@v2.0.0 
+      - uses: actions/checkout@v2.0.0
       - name: install dependencies
         run: 'npm install'
-      - name: deploy using wrangler 
+      - name: deploy using wrangler
         run: 'npx wrangler publish'
         env:
           CF_ACCOUNT_ID: ${{secrets.CF_ACCOUNT_ID}}
